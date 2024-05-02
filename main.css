@@ -1,0 +1,193 @@
+/* Estilo 1 
+Resetamos o estilo da página removendo os espaçamentos internos e margens
+e aplicando o Box-sizing: border-box */
+
+
+
+/* Estilo 2
+Estilizamos a tag HEADER aplicando espaçamento, cor de fundo e
+cor para textos e links e mudamos a exibição dos itens da lista(li)
+para que fiquem 1 do lado do outro*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button{
+    font-family: "Bungee", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    
+}
+
+header h1{
+    font-weight: normal;
+}
+
+body, input,
+textarea{
+    font-family: "Roboto", sans-serif;
+}
+header{
+    padding: 16px 0;
+    background-color: #182C61;
+    color: #ecf0f1;
+}
+
+header nav li{
+    display: inline; /*relocam os Links para 1 do lado do outro*/
+    margin-left: 16px;
+    font-size: 14px;
+
+}
+
+header nav li a{
+    color: #ecf0f1; /*Cor da letra dos LINKS*/
+    text-decoration: none; /*Retira o sublinhado dos Links*/
+}
+
+/*Estilo 3
+Criamos a classe container limitando sua largura em 1280px e o centralizando.
+Com isso o conteúdo do site estará centralizado e ocupará até 1280px,
+desde que o monitor tenha essa resolução da largura*/
+
+.container{
+    max-width: 1280px; /*Limite da largura em todos as telas*/
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*Estilo 4
+Sobrescrevemos o CSS do container dentro do HEADER para usarmos DISPLAY:FLEX e
+os itens do cabeçalho (título e menú) fiquem lado à lado*/
+
+header .container,
+section .container{
+    display: flex; /*SOBRE A LOJA fica ao lado da img da loja*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Estilo 5
+estilização dos logos. Configuramos a altura da imagem e sua exibição para que se apresentem uma do lado da outra*/
+.brands-list img{
+    height: 24px;
+    
+}
+
+.brands-list li{
+    display: inline;
+    margin-right: 8px;
+
+}
+
+/*Estilo 6
+estilização dos elementos da section, alinhamentno vertical
+no começo do container, aplicação de espaçamento interno e coloração dos textos*/
+
+
+section .container{
+    align-items: flex-start;
+}
+
+section{
+    padding: 24px 0 ;
+}
+
+section p{
+    
+    margin-bottom: 8px;
+}
+
+section{
+    color: #182C61;
+}
+
+section h2{
+
+    margin-bottom: 16px;  
+    font-size: 22px;
+
+}
+
+/*Estilo 7
+aplicação de margem na direita da imagem*/
+
+.store-front{
+    margin-right: 32px;
+}
+
+section .container li{
+    display: inline; /*relocam os Links para 1 do lado do outro*/
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+.social-links img{
+    height: 24px;
+
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 4px;
+    
+
+}.social-links li a{
+    text-decoration: none;
+    
+}
+
+#contact .container{
+    display: block;
+}
+
+form input,
+textarea,
+button{
+    display: block; /*INPUTS UM EM BAIXO DO OUTRO*/
+    width: 320px;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+section h3{
+    margin-bottom: 16px;
+}
+
+form button{
+    background-color: #182C61;
+    color: beige;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #6c82bf;
+}
+
+input:focus, textarea:focus{
+    outline-color: #182C61;
+}
+
+footer{
+    background-color: #182C61;
+    color: beige;
+    padding: 16px 0;
+}
